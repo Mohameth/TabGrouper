@@ -5,10 +5,11 @@ function groupTabsByDomain(tabs) {
         try {
             const url = new URL(tab.url);
             const domain = url.hostname;
-        if (!grouped[domain]) {
-            grouped[domain] = [];
-        }
-        grouped[domain].push(tab);
+            if (!grouped[domain]) {
+                grouped[domain] = [];
+            }
+            grouped[domain].push(tab);
+
         } catch (e) {
             console.error(`Invalid URL for tab ${tab.id}: ${tab.url}`);
         }
