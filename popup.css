@@ -2,22 +2,39 @@ body {
     width: 300px;
     font-family: Arial, sans-serif;
     padding: 10px;
-  }
-  
-  details {
+}
+
+details {
     margin-bottom: 10px;
-  }
-  
-  ul {
+}
+
+ul {
     list-style: none;
     padding-left: 10px;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
     color: #1a73e8;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: underline;
-  }
+}
+
+summary {
+    position: relative;
+    padding-right: 2em;
+}
+
+summary .trash-btn {
+    position: absolute;
+    right: 0.5em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+ul.tab-list > li {
+    display: flex;
+    justify-content: space-between;
+}
