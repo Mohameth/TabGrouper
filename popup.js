@@ -77,10 +77,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function getTrashBtn(title, callback) {
     const trashBtn = document.createElement("button");
+    const trashImg = document.createElement("img");
+    trashImg.src = browser.runtime.getURL("trash.svg");
+    trashImg.alt = "Close";
 
     trashBtn.classList.add('trash-btn');
-    trashBtn.textContent = "🗑";
     trashBtn.title = title;
+    
+    trashBtn.appendChild(trashImg);
     trashBtn.addEventListener("click", callback);
 
     return trashBtn;

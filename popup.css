@@ -38,3 +38,8 @@ ul.tab-list > li {
     display: flex;
     justify-content: space-between;
 }
+
+.trash-btn > img {
+    width: 17px;
+    height: 100%;
+}
